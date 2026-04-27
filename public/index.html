@@ -1,0 +1,30 @@
+cat > public/index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShiftWise — Know Your Real Pay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-logo" onclick="showSection('home')">Shift<span>Wise</span></div>
+    <div class="nav-links">
+      <button class="nav-btn active" onclick="showSection('home')">Home</button>
+      <button class="nav-btn" onclick="showSection('calc')">Calculator</button>
+      <button class="nav-btn" onclick="showSection('goals')">Goals</button>
+      <button class="nav-btn" onclick="showSection('sched')">Schedule</button>
+      <button class="nav-btn" onclick="showSection('log')">Work Log</button>
+    </div>
+  </nav>
+
+  <!-- All your sections go here (same as before) -->
+  <div id="sec-home" class="section active"> ... </div>
+  <!-- Add the rest of your HTML from the original file here -->
+
+  <script src="app.js"></script>
+</body>
+</html>
+EOF
